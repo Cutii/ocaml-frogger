@@ -1,0 +1,4 @@
+(executable
+ (name runner)
+ (public_name runner.exe)
+ (libraries frogger.test))

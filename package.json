@@ -1,0 +1,27 @@
+{
+    "name": "frogger",
+    "version": "0.0.1",
+    "description": "A frogger like game in OCaml",
+    "license": "MPL-2.0",
+    "scripts": {
+      "start": "open index.html",
+      "test": "./_esy/default/build/default/test-runner/runner.exe"
+    },
+    "dependencies": {
+      "@opam/alcotest": "1.2.3",
+      "@opam/dune": ">=1.11",
+      "ocaml": "~4.10",
+      "@opam/ocamlformat": "*",
+      "@opam/ocaml-lsp-server": "ocaml/ocaml-lsp:ocaml-lsp-server.opam",
+      "@opam/base": "*",
+      "@opam/js_of_ocaml": "*",
+      "@opam/js_of_ocaml-ppx": "*",    
+      "@opam/js_of_ocaml-compiler": "*",
+      "@opam/gen_js_api": "*"
+    },
+    "devDependencies": {
+    },
+    "esy": {
+      "build": [ "dune build ./bin/frogger_app.bc.js", "dune build ."]
+    }
+  }

@@ -1,0 +1,6 @@
+(library
+ (name SUT)
+ (public_name frogger.test)
+ (libraries frogger.lib alcotest)
+ (ocamlopt_flags
+  (-linkall -g)))
