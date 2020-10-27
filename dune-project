@@ -1,3 +1,5 @@
-(lang dune 1.11)
+(lang dune 2.7.1)
 
 (name frogger)
+
+(explicit_js_mode)

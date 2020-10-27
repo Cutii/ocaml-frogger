@@ -8,9 +8,8 @@
 
 (executable
  (name frogger_app)
- (modes byte js)
+ (modes js)
  (preprocess
   (pps js_of_ocaml-ppx))
- (public_name frogger)
  (modules Frogger_app)
  (libraries js_of_ocaml frogger.lib scaffold base))
