@@ -37,8 +37,10 @@ type t =
   ; state : Game_state.t
   }
 
+(** a utility function to initialize the position of the frod, you may change the 
+  * initial postion latter *)
 let init_frog () =
-  let initial_postion = Position.make ~x:Config.(width default / 2) ~y:0
+  let initial_postion = Position.make ~x:0 ~y:0
   and initial_direction = Direction.Up in
   Frog.make ~position:initial_postion ~direction:initial_direction
 
